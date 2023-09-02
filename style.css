@@ -41,69 +41,30 @@
 }
 
 /* <------------------PANTALLA INICIO-------------------> */
-.main__content--body {
+.container__hero--payments {
+    height: 100vh;
+}
+
+.container__hero--text {
     display: flex;
-    width: 100%;
-    height: 667px;
-    position: relative;
-
-}
-
-.body__background--img {
-    width: 100%;
-    height: 667px;
-    background-size: cover;
-    opacity: 0.75;
-}
-
-/* <------------------CONTAINER TEXT INICO-------------------> */
-
-.container__text {
-    margin: 0 auto;
-    position: absolute;
-    padding: 24px;
-    opacity: 0.75;
-    width: 100%;
-    background: linear-gradient(180deg, #123262 0%, rgba(18, 50, 98, 0.00) 100%);
-
-}
-
-.container__payments--text0 {
-    display: flex;
-    width: 100%;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 369px;
-    gap: 16px;
-
+    gap: 10px;
 }
 
-.container {
-    opacity: 0.5;
-    background: #195DC1;
+.img__pays {
+    height: 100vh;
+    width: 100%;
 }
+
+
+
 
 .dots {
     width: 60px;
     height: 8px;
 }
 
-.subtitle {
-    color: #FFF;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
-}
 
-.text {
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-}
 
 /* <------------------ARROWS-------------------> */
 .btn__arrow {
@@ -124,14 +85,14 @@
 
 /* <--PADRE----------------CONTAINER SERVICIOS MAIN-------------------> */
 .container__main--servicios {
-    display: inline-flex;
+    display: grid;
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
     padding: 40px 24px;
 }
 
-/* <------------------SECCION NOSOTROS-------------------> */
+/* <------------------CONTAINER NOSOTROS-------------------> */
 
 .container__payments--nosotros {
     display: flex;
@@ -152,7 +113,10 @@
 /* <--------CONTAINER SERVICIOS------------> */
 .container__servicios,
 .container__payments--solutions,
-.container__payments--pos {
+.container__payments--pos,
+.contianer__payments--subs,
+.contianer__payments--commerce,
+.contianer__payments--analytics {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -170,7 +134,7 @@
     text-transform: capitalize;
 }
 
-/* <------------------SECCION SERVICIOS-------------------> */
+/* <------------------CONTENT SECCION SERVICIOS-------------------> */
 .content__processing--main {
     display: flex;
     width: 100%;
@@ -183,16 +147,30 @@
 /* <-------IMG---------> */
 .img__processing,
 .img__solutions,
-.img__pos {
+.img__pos,
+.img__subs,
+.img__commerce,
+.img__analytics {
     width: 100%;
     object-fit: cover;
     height: 200px;
     border-radius: 8px;
 }
 
-.container__processing--text,
+/* <------------------CONTAINER TEXT-------------------> */
+
+.container__processing--text {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding-top: 24px;
+}
+
 .container__solutions--text,
-.container__text--pos {
+.container__text--pos,
+.container__text--subs,
+.container__text--coommerce,
+.container__text--analytics {
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -216,4 +194,10 @@ h3 {
     line-height: 140%;
 }
 
-/* <-------------------POS SYSTEM------------------> */
+.text__seccion--analytics {
+    font-size: 16px;
+    color: var(--primario);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
