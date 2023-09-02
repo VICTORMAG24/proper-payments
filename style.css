@@ -23,7 +23,7 @@
 
 .content__header,
 .container__header--payments {
-    width: 375px;
+    width: 100%;
     height: 84px;
     display: flex;
     justify-content: space-between;
@@ -43,19 +43,17 @@
 /* <------------------PANTALLA INICIO-------------------> */
 .main__content--body {
     display: flex;
-    width: 375px;
+    width: 100%;
     height: 667px;
     position: relative;
 
 }
 
-.body__background {
-    width: 375px;
+.body__background--img {
+    width: 100%;
     height: 667px;
     background-size: cover;
     opacity: 0.75;
-
-
 }
 
 /* <------------------CONTAINER TEXT INICO-------------------> */
@@ -65,13 +63,14 @@
     position: absolute;
     padding: 24px;
     opacity: 0.75;
+    width: 100%;
     background: linear-gradient(180deg, #123262 0%, rgba(18, 50, 98, 0.00) 100%);
 
 }
 
 .container__payments--text0 {
     display: flex;
-    width: 327px;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -100,7 +99,6 @@
 
 .text {
     color: #FFF;
-    font-family: Lato;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -124,7 +122,7 @@
     right: 10px;
 }
 
-/* <------------------SERVICIOS MAIN-------------------> */
+/* <--PADRE----------------CONTAINER SERVICIOS MAIN-------------------> */
 .container__main--servicios {
     display: inline-flex;
     flex-direction: column;
@@ -132,24 +130,15 @@
     gap: 32px;
     padding: 40px 24px;
 }
+
 /* <------------------SECCION NOSOTROS-------------------> */
 
 .container__payments--nosotros {
     display: flex;
-    width: 327px;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
-}
-
-.title__seccion--nosotros {
-    color: #013366;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
-    text-transform: capitalize;
-
 }
 
 .text__seccion--nosotros {
@@ -160,52 +149,63 @@
     line-height: 140%;
 }
 
-/* <------------------SECCION SERVICIOS-------------------> */
-
-.container__servicios{
+/* <--------CONTAINER SERVICIOS------------> */
+.container__servicios,
+.container__payments--solutions,
+.container__payments--pos {
     display: flex;
-    gap: 24px;
     flex-direction: column;
+    gap: 24px;
 }
 
+/* <------------------TITULOS-------------------> */
+
+.title__seccion--nosotros,
 .title__servicios {
-    color: var(--primario);
+    color: #013366;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
     text-transform: capitalize;
-
 }
 
+/* <------------------SECCION SERVICIOS-------------------> */
 .content__processing--main {
     display: flex;
-    width: 327px;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 24px;
 }
 
-.container__processing--text {
+/* <-------IMG---------> */
+.img__processing,
+.img__solutions,
+.img__pos {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.container__processing--text,
+.container__solutions--text,
+.container__text--pos {
     display: flex;
     gap: 10px;
     flex-direction: column;
 }
 
-.subtitle__seccion--processing {
+/* <------------------SUBTITLE --DESCRIPTIONS-------------------> */
+h3 {
+    text-transform: capitalize;
     color: var(--primario);
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%
-}
-
-/* <------------------SUBTITLE --DESCRIPTIONS-------------------> */
-
-h3 {
-    text-transform: capitalize;
-    color: var(--primario);
 }
 
 .size_16px {
@@ -216,26 +216,4 @@ h3 {
     line-height: 140%;
 }
 
-/* <-------------------------------------> */
-
-
-.container__payments--solutions {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.container__solutions--text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    align-self: stretch;
-}
-
-.subtitle__seccion--solutions {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%;
-}
+/* <-------------------POS SYSTEM------------------> */
