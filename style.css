@@ -328,7 +328,7 @@ h3 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    border: none;
+    text-decoration: underline;
 }
 
 .contact__mail--flex,
