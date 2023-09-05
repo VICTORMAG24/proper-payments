@@ -160,6 +160,7 @@
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
+    padding: 24px;
     gap: 12px;
     border-radius: 8px;
     background: #FFF;
@@ -173,12 +174,15 @@
     font-weight: 400;
     line-height: 140%;
 }
+.container__main--grid{
+    display: grid;
+    gap: 24px;
+}
 
 /* <--------CONTAINER SERVICIOS------------> */
 .container__servicios {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 24px;
 
 }
@@ -279,9 +283,13 @@ h3 {
     background-color: var(--primario);
 
 }
+.container__cards{
+    padding: 24px;
+    display: grid;
+    gap: 24px;
+}
 
 .container__cards--padding {
-    padding: 24px;
     display: inline-flex;
     flex-direction: column;
     gap: 16px;
@@ -294,7 +302,6 @@ h3 {
     font-weight: 700;
     line-height: 110%;
     text-transform: capitalize;
-    padding-bottom: 8px;
 }
 
 .card__why-segurity {
@@ -393,7 +400,10 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.10);
+    padding: 32px;
 }
+
 
 .form {
     display: flex;
@@ -560,12 +570,11 @@ input {
         padding-top: 20px;
     }
 
-    .container__main--grid{
+    .container__main--grid {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         max-width: 1000px;
-        padding-bottom: 20px;
 
     }
 
@@ -573,14 +582,45 @@ input {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 24px;
-        padding-top: 40px;
     }
-    .container__main--servicios{
+
+    .container__main--servicios {
         gap: 80px;
         display: flex;
         padding: 60px;
     }
+    /* <--------Why Choose Us------> */
+    .container__why--blue {
+        display: flex;
+        justify-content: center;
+        padding: 80px;
+    }
 
- 
+    .container__cards--padding {
+        padding: 0;
+        width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 24px;
+    }
+
+    /* <------form-------> */
+    .container__contact--spaces{
+        width: 1000px;
+        display: grid;
+        justify-content: center;
+        margin:  0 auto;
+        padding: 80px 0;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    }
+    .container__contact{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* <------footer-------> */
+    
+
 
 }
