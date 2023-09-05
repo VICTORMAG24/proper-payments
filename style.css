@@ -459,7 +459,6 @@ input {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
 }
 
 .btn__submit {
@@ -486,7 +485,6 @@ input {
 .container__footer--bkblue {
     background-color: var(--primario);
     width: 100%;
-
 }
 
 .footer {
@@ -597,7 +595,6 @@ input {
         flex-direction: column;
         margin: 0 auto;
         max-width: 1000px;
-
     }
 
     .container__servicios {
@@ -663,13 +660,12 @@ input {
     }
 
     /* <------footer-------> */
-
-
     .footer {
         display: flex;
         width: 1000px;
         flex-direction: row;
         margin: 0 auto;
+        padding: 70px 0;
     }
 
     .footer__servicios {
