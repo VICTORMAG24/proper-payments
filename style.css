@@ -501,7 +501,7 @@ input {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 16px;
+    gap: 60px;
 }
 
 .footer__servicios {
@@ -666,6 +666,9 @@ input {
         flex-direction: row;
         margin: 0 auto;
         padding: 70px 0;
+    }
+    .footer__nav{
+        gap: 16px;
     }
 
     .footer__servicios {
