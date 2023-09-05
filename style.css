@@ -131,7 +131,7 @@
 /* <------------------ARROWS-------------------> */
 .arrow {
     position: absolute;
-    bottom: 460px;
+    bottom: 50vh;
     background: transparent;
     cursor: pointer;
 }
@@ -174,7 +174,8 @@
     font-weight: 400;
     line-height: 140%;
 }
-.container__main--grid{
+
+.container__main--grid {
     display: grid;
     gap: 24px;
 }
@@ -283,7 +284,8 @@ h3 {
     background-color: var(--primario);
 
 }
-.container__cards{
+
+.container__cards {
     padding: 24px;
     display: grid;
     gap: 24px;
@@ -428,6 +430,12 @@ input {
     background: #FFF;
 }
 
+.container__checkbox-btnsubmit {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .container__ctas {
     display: flex;
     flex-direction: column;
@@ -478,6 +486,10 @@ input {
 .container__footer--bkblue {
     background-color: var(--primario);
     width: 100%;
+
+}
+
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -494,7 +506,18 @@ input {
     gap: 16px;
 }
 
-.footer__nav>p {
+.footer__servicios {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__logo {
+    width: 170px;
+}
+
+.footer__servicios>a {
     color: #FFF;
     font-size: 18px;
     font-style: normal;
@@ -567,7 +590,6 @@ input {
         padding: 40px;
         margin: 0 auto;
         max-width: 1000px;
-        padding-top: 20px;
     }
 
     .container__main--grid {
@@ -589,11 +611,16 @@ input {
         display: flex;
         padding: 60px;
     }
+
     /* <--------Why Choose Us------> */
     .container__why--blue {
         display: flex;
         justify-content: center;
         padding: 80px;
+    }
+
+    .container__cards {
+        padding: 0;
     }
 
     .container__cards--padding {
@@ -605,22 +632,50 @@ input {
     }
 
     /* <------form-------> */
-    .container__contact--spaces{
+    .container__contact--spaces {
         width: 1000px;
         display: grid;
         justify-content: center;
-        margin:  0 auto;
+        margin: 0 auto;
         padding: 80px 0;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
     }
-    .container__contact{
+
+    .container__contact {
         display: flex;
         justify-content: center;
     }
 
-    /* <------footer-------> */
-    
+    .form__names,
+    .form__contact,
+    .form__monthly {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 
+    .container__checkbox-btnsubmit {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    /* <------footer-------> */
+
+
+    .footer {
+        display: flex;
+        width: 1000px;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .footer__servicios {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
 
 }
