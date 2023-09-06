@@ -15,11 +15,12 @@
 }
 
 /* <------------------HEADER-------------------> */
-.container__header--payments {
+.container__header--transparent {
     position: fixed;
     width: 100%;
     z-index: 1000;
     background-color:transparent;
+    
 
 }
 
@@ -53,7 +54,7 @@
     gap: 32px;
 }
 
-.nav__servicios {
+.nav__servicios-header {
     color: var(--primario);
     font-size: 18px;
     font-style: normal;
@@ -427,6 +428,7 @@ input {
     border-radius: 6px;
     border: 1px solid rgba(1, 51, 102, 0.35);
     background: #FFF;
+    padding: 5px;
 }
 
 .container__checkbox-btnsubmit {
